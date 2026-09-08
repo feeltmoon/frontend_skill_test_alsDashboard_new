@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search and review Rave ALS study metadata.">
+    <title>ALS Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css?v=20260812-1751">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="ALS Dashboard navigation">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><i data-icon="panels-top-left"></i></span>
+          <span><strong>ALS</strong><small>Dashboard</small></span>
+        </div>
+        <nav id="board-nav" class="board-nav"></nav>
+        <section class="sidebar-study" aria-labelledby="current-study-label">
+          <div class="study-summary">
+            <span class="eyebrow" id="current-study-label">Current study</span>
+            <strong id="study-name">Awaiting workbook</strong>
+          </div>
+        </section>
+        <div class="sidebar-foot">
+          <span class="status-dot" id="sidebar-status-dot"></span>
+          <span id="sidebar-status">No workbook loaded</span>
+        </div>
+      </aside>
+
+      <div class="workspace">
+        <button class="icon-button mobile-menu" id="mobile-menu" type="button" aria-label="Open navigation" aria-expanded="false">
+          <i data-icon="menu"></i>
+        </button>
+        <main id="main-content" tabindex="-1"></main>
+      </div>
+    </div>
+
+    <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <script type="module" src="/app.js?v=20260812-1751"></script>
+  </body>
+</html>
+
